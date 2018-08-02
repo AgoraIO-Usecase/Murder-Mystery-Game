@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A71FF2F92109B504003D37B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71FF2F82109B504003D37B3 /* AppDelegate.swift */; };
+		A71FF2FB2109B504003D37B3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71FF2FA2109B504003D37B3 /* MainViewController.swift */; };
+		A71FF2FE2109B504003D37B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A71FF2FC2109B504003D37B3 /* Main.storyboard */; };
+		A71FF3002109B505003D37B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71FF2FF2109B505003D37B3 /* Assets.xcassets */; };
+		A71FF3032109B505003D37B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A71FF3012109B505003D37B3 /* LaunchScreen.storyboard */; };
+		A779ABDC2109C24D0035AF88 /* CrimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A779ABDB2109C24D0035AF88 /* CrimeViewController.swift */; };
+		A779ABE02109E10E0035AF88 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A779ABDF2109E10E0035AF88 /* UserInfo.swift */; };
+		A79BD036210EB42E00AC7923 /* AgoraStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BD035210EB42E00AC7923 /* AgoraStatus.swift */; };
+		A79BD038210EED1600AC7923 /* WatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BD037210EED1600AC7923 /* WatchViewController.swift */; };
+		A79BD03A210EF7C700AC7923 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BD039210EF7C700AC7923 /* Scene.swift */; };
+		A79BD03C210EFB2900AC7923 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BD03B210EFB2900AC7923 /* SceneViewController.swift */; };
+		A79BD03E210F01E300AC7923 /* PrivateChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BD03D210F01E300AC7923 /* PrivateChatViewController.swift */; };
+		A7B7BB9C210ADC46005FE91C /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B7BB9B210ADC46005FE91C /* UserCell.swift */; };
+		A7B7BBA0210AE3AA005FE91C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7BB9F210AE3AA005FE91C /* libc++.tbd */; };
+		A7B7BBA2210AE3B9005FE91C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7BBA1210AE3B9005FE91C /* AVFoundation.framework */; };
+		A7B7BBA4210AE3C5005FE91C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7BBA3210AE3C5005FE91C /* SystemConfiguration.framework */; };
+		A7B7BBA6210AE3CF005FE91C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7BBA5210AE3CF005FE91C /* AudioToolbox.framework */; };
+		A7B7BBA8210AE3D9005FE91C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7BBA7210AE3D9005FE91C /* CoreTelephony.framework */; };
+		A7B7BBAA210AE3EB005FE91C /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7BBA9210AE3EB005FE91C /* libresolv.tbd */; };
+		A7B7BBAC210AE3FB005FE91C /* AgoraAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7BBAB210AE3FB005FE91C /* AgoraAudioKit.framework */; };
+		A7B7BBAE210AE4D2005FE91C /* KeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B7BBAD210AE4D2005FE91C /* KeyCenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A71FF2F52109B504003D37B3 /* ARD-Agora-Murder-Mystery-Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARD-Agora-Murder-Mystery-Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71FF2F82109B504003D37B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A71FF2FA2109B504003D37B3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A71FF2FD2109B504003D37B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A71FF2FF2109B505003D37B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A71FF3022109B505003D37B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A71FF3042109B505003D37B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A779ABDB2109C24D0035AF88 /* CrimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeViewController.swift; sourceTree = "<group>"; };
+		A779ABDF2109E10E0035AF88 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		A79BD035210EB42E00AC7923 /* AgoraStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraStatus.swift; sourceTree = "<group>"; };
+		A79BD037210EED1600AC7923 /* WatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchViewController.swift; sourceTree = "<group>"; };
+		A79BD039210EF7C700AC7923 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		A79BD03B210EFB2900AC7923 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
+		A79BD03D210F01E300AC7923 /* PrivateChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateChatViewController.swift; sourceTree = "<group>"; };
+		A7B7BB9B210ADC46005FE91C /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		A7B7BB9F210AE3AA005FE91C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A7B7BBA1210AE3B9005FE91C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A7B7BBA3210AE3C5005FE91C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A7B7BBA5210AE3CF005FE91C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A7B7BBA7210AE3D9005FE91C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A7B7BBA9210AE3EB005FE91C /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		A7B7BBAB210AE3FB005FE91C /* AgoraAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraAudioKit.framework; path = "ARD-Agora-Murder-Mystery-Game/AgoraAudioKit.framework"; sourceTree = "<group>"; };
+		A7B7BBAD210AE4D2005FE91C /* KeyCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A71FF2F22109B504003D37B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B7BBAC210AE3FB005FE91C /* AgoraAudioKit.framework in Frameworks */,
+				A7B7BBAA210AE3EB005FE91C /* libresolv.tbd in Frameworks */,
+				A7B7BBA8210AE3D9005FE91C /* CoreTelephony.framework in Frameworks */,
+				A7B7BBA6210AE3CF005FE91C /* AudioToolbox.framework in Frameworks */,
+				A7B7BBA4210AE3C5005FE91C /* SystemConfiguration.framework in Frameworks */,
+				A7B7BBA2210AE3B9005FE91C /* AVFoundation.framework in Frameworks */,
+				A7B7BBA0210AE3AA005FE91C /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A71FF2EC2109B504003D37B3 = {
+			isa = PBXGroup;
+			children = (
+				A71FF2F72109B504003D37B3 /* ARD-Agora-Murder-Mystery-Game */,
+				A71FF2F62109B504003D37B3 /* Products */,
+				A7B7BB9E210AE3A9005FE91C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A71FF2F62109B504003D37B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A71FF2F52109B504003D37B3 /* ARD-Agora-Murder-Mystery-Game.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A71FF2F72109B504003D37B3 /* ARD-Agora-Murder-Mystery-Game */ = {
+			isa = PBXGroup;
+			children = (
+				A71FF2F82109B504003D37B3 /* AppDelegate.swift */,
+				A71FF2FC2109B504003D37B3 /* Main.storyboard */,
+				A779ABD62109BA780035AF88 /* Models */,
+				A779ABCF2109B9CD0035AF88 /* Views */,
+				A779ABCB2109B9AA0035AF88 /* Controllers */,
+				A71FF30A2109B5D2003D37B3 /* Supporting Files */,
+			);
+			path = "ARD-Agora-Murder-Mystery-Game";
+			sourceTree = "<group>";
+		};
+		A71FF30A2109B5D2003D37B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A71FF2FF2109B505003D37B3 /* Assets.xcassets */,
+				A71FF3012109B505003D37B3 /* LaunchScreen.storyboard */,
+				A71FF3042109B505003D37B3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A779ABCB2109B9AA0035AF88 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A71FF2FA2109B504003D37B3 /* MainViewController.swift */,
+				A779ABDB2109C24D0035AF88 /* CrimeViewController.swift */,
+				A79BD037210EED1600AC7923 /* WatchViewController.swift */,
+				A79BD03B210EFB2900AC7923 /* SceneViewController.swift */,
+				A79BD03D210F01E300AC7923 /* PrivateChatViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A779ABCF2109B9CD0035AF88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7B7BB9B210ADC46005FE91C /* UserCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A779ABD62109BA780035AF88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7B7BBAD210AE4D2005FE91C /* KeyCenter.swift */,
+				A779ABDF2109E10E0035AF88 /* UserInfo.swift */,
+				A79BD039210EF7C700AC7923 /* Scene.swift */,
+				A79BD035210EB42E00AC7923 /* AgoraStatus.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A7B7BB9E210AE3A9005FE91C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7B7BBAB210AE3FB005FE91C /* AgoraAudioKit.framework */,
+				A7B7BBA9210AE3EB005FE91C /* libresolv.tbd */,
+				A7B7BBA7210AE3D9005FE91C /* CoreTelephony.framework */,
+				A7B7BBA5210AE3CF005FE91C /* AudioToolbox.framework */,
+				A7B7BBA3210AE3C5005FE91C /* SystemConfiguration.framework */,
+				A7B7BBA1210AE3B9005FE91C /* AVFoundation.framework */,
+				A7B7BB9F210AE3AA005FE91C /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A71FF2F42109B504003D37B3 /* ARD-Agora-Murder-Mystery-Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A71FF3072109B505003D37B3 /* Build configuration list for PBXNativeTarget "ARD-Agora-Murder-Mystery-Game" */;
+			buildPhases = (
+				A71FF2F12109B504003D37B3 /* Sources */,
+				A71FF2F22109B504003D37B3 /* Frameworks */,
+				A71FF2F32109B504003D37B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ARD-Agora-Murder-Mystery-Game";
+			productName = "ARD-Agora-Murder-Mystery-Game";
+			productReference = A71FF2F52109B504003D37B3 /* ARD-Agora-Murder-Mystery-Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A71FF2ED2109B504003D37B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = CavanSu;
+				TargetAttributes = {
+					A71FF2F42109B504003D37B3 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A71FF2F02109B504003D37B3 /* Build configuration list for PBXProject "ARD-Agora-Murder-Mystery-Game" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A71FF2EC2109B504003D37B3;
+			productRefGroup = A71FF2F62109B504003D37B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A71FF2F42109B504003D37B3 /* ARD-Agora-Murder-Mystery-Game */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A71FF2F32109B504003D37B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71FF3032109B505003D37B3 /* LaunchScreen.storyboard in Resources */,
+				A71FF3002109B505003D37B3 /* Assets.xcassets in Resources */,
+				A71FF2FE2109B504003D37B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A71FF2F12109B504003D37B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B7BBAE210AE4D2005FE91C /* KeyCenter.swift in Sources */,
+				A79BD036210EB42E00AC7923 /* AgoraStatus.swift in Sources */,
+				A71FF2FB2109B504003D37B3 /* MainViewController.swift in Sources */,
+				A779ABE02109E10E0035AF88 /* UserInfo.swift in Sources */,
+				A79BD038210EED1600AC7923 /* WatchViewController.swift in Sources */,
+				A79BD03C210EFB2900AC7923 /* SceneViewController.swift in Sources */,
+				A7B7BB9C210ADC46005FE91C /* UserCell.swift in Sources */,
+				A79BD03A210EF7C700AC7923 /* Scene.swift in Sources */,
+				A779ABDC2109C24D0035AF88 /* CrimeViewController.swift in Sources */,
+				A79BD03E210F01E300AC7923 /* PrivateChatViewController.swift in Sources */,
+				A71FF2F92109B504003D37B3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A71FF2FC2109B504003D37B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A71FF2FD2109B504003D37B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A71FF3012109B505003D37B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A71FF3022109B505003D37B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A71FF3052109B505003D37B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A71FF3062109B505003D37B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A71FF3082109B505003D37B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARD-Agora-Murder-Mystery-Game",
+				);
+				INFOPLIST_FILE = "ARD-Agora-Murder-Mystery-Game/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.agora.ARD-Agora-Murder-Mystery-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A71FF3092109B505003D37B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARD-Agora-Murder-Mystery-Game",
+				);
+				INFOPLIST_FILE = "ARD-Agora-Murder-Mystery-Game/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.agora.ARD-Agora-Murder-Mystery-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A71FF2F02109B504003D37B3 /* Build configuration list for PBXProject "ARD-Agora-Murder-Mystery-Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71FF3052109B505003D37B3 /* Debug */,
+				A71FF3062109B505003D37B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A71FF3072109B505003D37B3 /* Build configuration list for PBXNativeTarget "ARD-Agora-Murder-Mystery-Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71FF3082109B505003D37B3 /* Debug */,
+				A71FF3092109B505003D37B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A71FF2ED2109B504003D37B3 /* Project object */;
+}
