@@ -31,23 +31,35 @@
 	```
 
 2. 解压下载的语音通话 SDK 压缩包，将其中的 libs/**AgoraAudioKit.framework** 复制到本项目的 iOS/ARD-Agora-Murder-Mystery-Game 文件夹下。
-3. 最后使用 XCode 打开 iOS/ARD-Agora-Murder-Mystery-Game.xcodeproj，连接 iPhone／iPad 测试设备，设置有效的开发者签名后即可运行。
+3. 使用 XCode 打开 iOS/ARD-Agora-Murder-Mystery-Game.xcodeproj，连接 iOS 测试设备，设置有效的开发者签名后即可运行。
 
 		运行环境:
 		* XCode 9.0 +
 		* iOS 8.0 +
-		* iOS 真机设备，不支持模拟器
 
 #### Android
+1. 将有效的 AppID 填写进 "app/src/main/res/values/strings_config.xml"
+
+	```
+	<string name="private_app_id"><#YOUR APP ID#></string>
+	```
+
+2. 解压下载的语音通话 SDK 压缩包，将其中的 **libs** 文件夹下的 ***.jar** 复制到本项目的 **app/libs** 下，其中的 **libs** 文件夹下的 **arm64-v8a**/**x86**/**armeabi-v7a** 复制到本项目的 **app/src/main/jniLibs** 下。
+3. 使用 Android Studio 打开该项目，连接 Android 测试设备，编译并运行。也可以使用 `Gradle` 直接编译运行。
+
+		运行环境:
+		* Android Studio 2.0 +
+		* minSdkVersion 16
+		* 部分模拟器会存在功能缺失或者性能问题，所以推荐使用真机 Android 设备，
 
 
 ## 联系我们
 
-- 完整的 API 文档见 [文档中心](https://docs.agora.io/cn/)
+- 如果发现了示例程序的 bug，欢迎提交 [issue](https://github.com/AgoraIO-Usecase/Murder-Mystery-Game/issues)
+- 声网 SDK 完整 API 文档见 [文档中心](https://docs.agora.io/cn/)
 - 如果在集成中遇到问题，你可以到 [开发者社区](https://dev.agora.io/cn/) 提问
 - 如果有售前咨询问题，可以拨打 400 632 6626，或加入官方Q群 12742516 提问
 - 如果需要售后技术支持，你可以在 [Agora Dashboard](https://dashboard.agora.io) 提交工单
-- 如果发现了示例程序的 bug，欢迎提交 [issue](https://github.com/AgoraIO-Usecase/Murder-Mystery-Game/issues)
 
 ## 代码许可
 
