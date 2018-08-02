@@ -125,29 +125,21 @@ extension PrivateChatViewController: AgoraRtcEngineDelegate {
         // 注意： 1. 由于demo欠缺业务服务器，所以用户列表是根据AgoraRtcEngineDelegate的didJoinedOfUid、didOfflineOfUid回调来管理的
         //       2. 每次加入频道成功后，新建一个用户列表然后通过回调进行统计
         userList = [UserInfo]()
-        print("didJoinChannel")
     }
     
     func rtcEngine(_ engine: AgoraRtcEngineKit, didJoinedOfUid uid: UInt, elapsed: Int) {
         // 当有用户加入时，添加到用户列表
         addUser(uid: uid)
-        print("didJoinedOfUid")
-    }
-    
-    func rtcEngine(_ engine: AgoraRtcEngineKit, didLeaveChannelWith stats: AgoraChannelStats) {
-        print("didLeaveChannelWith")
     }
     
     func rtcEngine(_ engine: AgoraRtcEngineKit, didOfflineOfUid uid: UInt, reason: AgoraUserOfflineReason) {
         // 当用户离开时，从用户列表中清除
         removeUser(uid: uid)
-        print("didOfflineOfUid")
     }
     
     func rtcEngine(_ engine: AgoraRtcEngineKit, didAudioMuted muted: Bool, byUid uid: UInt) {
         // 当频道里的用户开始或停止发送音频流的时候，会收到这个回调。在界面的用户头像上显示或隐藏静音标记
         updateUser(uid: uid, isMute: muted)
-        print("didAudioMuted")
     }
     
     func rtcEngine(_ engine: AgoraRtcEngineKit, reportAudioVolumeIndicationOfSpeakers speakers: [AgoraRtcAudioVolumeInfo], totalVolume: Int) {
