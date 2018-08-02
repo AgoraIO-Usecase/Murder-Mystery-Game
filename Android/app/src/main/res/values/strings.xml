@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ARD-Agora-Murder-Mystery-Game</string>
+    <string name="app_str_join">加入游戏</string>
+    <string name="app_str_onlook">围观</string>
+    <string name="app_str_crime_scene">案发现场</string>
+    <string name="app_str_corrider">走廊</string>
+    <string name="app_str_bedroom">卧室</string>
+    <string name="app_str_private_chat">私聊</string>
+</resources>

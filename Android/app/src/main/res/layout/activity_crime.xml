@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context="io.agora.murder.mystery.CrimeActivity">
+
+    <ImageView
+        android:id="@+id/main_back"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="15dp"
+        android:onClick="finishClick"
+        android:clickable="true"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:src="@drawable/back_arrow" />
+
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_marginTop="27dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_str_crime_scene"
+        android:textColor="@color/yellow"
+        android:textSize="16sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/main_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/main_broadcast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/main_play"
+                android:layout_width="109dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="18dp"
+                android:background="@drawable/script02" />
+
+            <CheckBox
+                android:id="@+id/main_audio"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="18dp"
+                android:button="@null"
+                android:background="@drawable/select_checkbox_mute_audio" />
+
+            <CheckBox
+                android:id="@+id/main_micphone"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="18dp"
+                android:button="@null"
+                android:background="@drawable/select_checkbox_mute_micphone" />
+
+            <ImageView
+                android:layout_width="109dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="18dp"
+                android:background="@drawable/clue02" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_audience"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="109dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:background="@drawable/script" />
+
+            <CheckBox
+                android:id="@+id/main_audience_audio"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="18dp"
+                android:button="@null"
+                android:background="@drawable/select_checkbox_mute_audio" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="18dp"
+                android:background="@drawable/microphone02" />
+
+            <ImageView
+                android:layout_width="109dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/clue"
+                android:layout_marginLeft="18dp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_scene_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_above="@+id/main_bottom_layout"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:id="@+id/main_bedroom"
+            android:layout_width="158dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bedroom"
+            android:layout_marginLeft="18dp"/>
+
+        <ImageView
+            android:id="@+id/main_corridor"
+            android:layout_width="158dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/corrider"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="16dp"
+        android:layout_above="@+id/main_scene_layout"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/visiter"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_memberlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="44px"
+        android:layout_below="@+id/title_textview" />
+
+
+</RelativeLayout>

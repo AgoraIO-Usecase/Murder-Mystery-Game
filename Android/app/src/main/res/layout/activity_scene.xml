@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:id="@+id/scene_parent"
+    tools:context="io.agora.murder.mystery.CrimeActivity"
+    >
+
+    <ImageView
+        android:id="@+id/scene_back"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="15dp"
+        android:onClick="finishClick"
+        android:clickable="true"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:src="@drawable/back_arrow" />
+
+    <TextView
+        android:id="@+id/scene_title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_marginTop="27dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_str_crime_scene"
+        android:textColor="@color/yellow"
+        android:textSize="16sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/scene_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/scene_play"
+            android:layout_width="109dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/script02"
+            android:layout_alignParentBottom="true"/>
+
+        <CheckBox
+            android:id="@+id/scene_audio"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/scene_play"
+            android:background="@drawable/select_checkbox_mute_audio"
+            android:button="@null"
+            android:layout_alignParentBottom="true"/>
+
+        <CheckBox
+            android:id="@+id/scene_micphone"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/scene_audio"
+            android:background="@drawable/select_checkbox_mute_micphone"
+            android:button="@null"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:layout_width="109dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/scene_micphone"
+            android:background="@drawable/clue02"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:id="@+id/scene_private_chat"
+            android:layout_width="109dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="18dp"
+            android:layout_above="@+id/scene_play"
+            android:layout_marginBottom="44px"
+            android:background="@drawable/talking" />
+
+        <ImageView
+            android:layout_width="109dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/scene_micphone"
+            android:layout_above="@+id/scene_micphone"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/search" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

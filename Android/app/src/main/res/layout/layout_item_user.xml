@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/item_user_bg"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="13dp"
+        android:background="@drawable/shape_yellow_circle"/>
+
+    <ImageView
+        android:id="@+id/item_header"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="14dp"
+        android:background="@drawable/miss"/>
+
+    <ImageView
+        android:id="@+id/item_mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_header"
+        android:layout_alignRight="@+id/item_header"
+        android:background="@drawable/mrcophone_s"
+        android:layout_alignEnd="@+id/item_header" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_below="@+id/item_header"
+        android:textColor="@color/yellow"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/main_back"
+        android:layout_width="100px"
+        android:layout_height="60px"
+        android:layout_marginTop="86px"
+        android:onClick="finishClick"
+        android:clickable="true"
+        android:paddingLeft="44px"
+        android:src="@drawable/back_arrow" />
+
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_marginTop="86px"
+        android:gravity="center_horizontal"
+        android:text="@string/app_str_crime_scene"
+        android:textColor="@color/yellow"
+        android:textSize="48px" />
+
+
+</RelativeLayout>

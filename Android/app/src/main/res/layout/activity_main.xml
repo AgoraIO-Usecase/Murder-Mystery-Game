@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    tools:context="io.agora.murder.mystery.CrimeActivity">
+
+
+    <Button
+        android:id="@+id/home_button_look"
+        android:layout_width="260dp"
+        android:layout_height="42dp"
+        android:background="@drawable/shape_yellow"
+        android:text="@string/app_str_onlook"
+        android:textColor="@color/yellow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/home_button_join"
+        android:layout_width="260dp"
+        android:layout_height="42dp"
+        android:layout_above="@+id/home_button_look"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/shape_red"
+        android:text="@string/app_str_join"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        />
+
+    
+
+</RelativeLayout>

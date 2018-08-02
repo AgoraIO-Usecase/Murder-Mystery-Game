@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg05"
+    tools:context="io.agora.murder.mystery.CrimeActivity">
+
+    <ImageView
+        android:id="@+id/private_chat_back"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="15dp"
+        android:onClick="finishClick"
+        android:clickable="true"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:src="@drawable/back_arrow" />
+
+    <TextView
+        android:id="@+id/private_chat_title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_marginTop="27dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_str_private_chat"
+        android:textColor="@color/yellow"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/private_chat_memberlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/private_chat_title_textview"
+        android:padding="15dp"
+        android:numColumns="4" />
+
+    <RelativeLayout
+        android:id="@+id/private_chat_bottom_layout"
+        android:layout_width="88dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp">
+
+
+        <CheckBox
+            android:id="@+id/private_chat_audio"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:button="@null"
+            android:background="@drawable/select_checkbox_mute_audio" />
+
+        <CheckBox
+            android:id="@+id/private_chat_micphone"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="18dp"
+            android:button="@null"
+            android:layout_toRightOf="@+id/private_chat_audio"
+            android:background="@drawable/select_checkbox_mute_micphone" />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="16dp"
+        android:layout_above="@+id/private_chat_bottom_layout"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/visiter"/>
+
+
+</RelativeLayout>
