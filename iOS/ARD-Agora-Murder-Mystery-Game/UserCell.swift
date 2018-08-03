@@ -16,7 +16,7 @@ class UserCell: UICollectionViewCell {
         let animate = CAKeyframeAnimation.init()
         animate.keyPath = "opacity"
         animate.values = [0, 0.2, 0.5, 0.2, 0]
-        animate.duration = 5
+        animate.duration = 2
         animate.repeatCount = 1
         return animate
     }()

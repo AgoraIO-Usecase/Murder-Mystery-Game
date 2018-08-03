@@ -129,9 +129,9 @@ extension WatchViewController: AgoraRtcEngineDelegate {
             for speaker in speakers {
                 if let weakSelf = self, let index = weakSelf.getIndexWithUserIsSpeaking(uid: speaker.uid) {
                     let path = IndexPath.init(item: index, section: 0)
-                    if  let cell = weakSelf.usersCollectionView.cellForItem(at: path) {
-                        let userCell = cell as! UserCell
-                        DispatchQueue.main.async {
+                    DispatchQueue.main.async {
+                        if  let cell = weakSelf.usersCollectionView.cellForItem(at: path) {
+                            let userCell = cell as! UserCell
                             userCell.animating = true
                         }
                     }

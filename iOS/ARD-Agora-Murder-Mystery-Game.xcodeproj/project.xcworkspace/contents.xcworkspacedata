@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ARD-Agora-Murder-Mystery-Game.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
