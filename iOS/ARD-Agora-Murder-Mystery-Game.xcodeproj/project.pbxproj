@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381ADCFA211432D60001B2C0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 381ADCF9211432D50001B2C0 /* README.md */; };
 		A71FF2F92109B504003D37B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71FF2F82109B504003D37B3 /* AppDelegate.swift */; };
 		A71FF2FB2109B504003D37B3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71FF2FA2109B504003D37B3 /* MainViewController.swift */; };
 		A71FF2FE2109B504003D37B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A71FF2FC2109B504003D37B3 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		381ADCF9211432D50001B2C0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A71FF2F52109B504003D37B3 /* ARD-Agora-Murder-Mystery-Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARD-Agora-Murder-Mystery-Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71FF2F82109B504003D37B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A71FF2FA2109B504003D37B3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -74,9 +76,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		385F430921142E3A00EA9A5E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A71FF2FA2109B504003D37B3 /* MainViewController.swift */,
+				A779ABDB2109C24D0035AF88 /* CrimeViewController.swift */,
+				A79BD037210EED1600AC7923 /* WatchViewController.swift */,
+				A79BD03B210EFB2900AC7923 /* SceneViewController.swift */,
+				A79BD03D210F01E300AC7923 /* PrivateChatViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		A71FF2EC2109B504003D37B3 = {
 			isa = PBXGroup;
 			children = (
+				381ADCF9211432D50001B2C0 /* README.md */,
 				A71FF2F72109B504003D37B3 /* ARD-Agora-Murder-Mystery-Game */,
 				A71FF2F62109B504003D37B3 /* Products */,
 				A7B7BB9E210AE3A9005FE91C /* Frameworks */,
@@ -94,11 +109,10 @@
 		A71FF2F72109B504003D37B3 /* ARD-Agora-Murder-Mystery-Game */ = {
 			isa = PBXGroup;
 			children = (
-				A71FF2F82109B504003D37B3 /* AppDelegate.swift */,
 				A71FF2FC2109B504003D37B3 /* Main.storyboard */,
+				385F430921142E3A00EA9A5E /* Controllers */,
 				A779ABD62109BA780035AF88 /* Models */,
 				A779ABCF2109B9CD0035AF88 /* Views */,
-				A779ABCB2109B9AA0035AF88 /* Controllers */,
 				A71FF30A2109B5D2003D37B3 /* Supporting Files */,
 			);
 			path = "ARD-Agora-Murder-Mystery-Game";
@@ -110,20 +124,9 @@
 				A71FF2FF2109B505003D37B3 /* Assets.xcassets */,
 				A71FF3012109B505003D37B3 /* LaunchScreen.storyboard */,
 				A71FF3042109B505003D37B3 /* Info.plist */,
+				A71FF2F82109B504003D37B3 /* AppDelegate.swift */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A779ABCB2109B9AA0035AF88 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				A71FF2FA2109B504003D37B3 /* MainViewController.swift */,
-				A779ABDB2109C24D0035AF88 /* CrimeViewController.swift */,
-				A79BD037210EED1600AC7923 /* WatchViewController.swift */,
-				A79BD03B210EFB2900AC7923 /* SceneViewController.swift */,
-				A79BD03D210F01E300AC7923 /* PrivateChatViewController.swift */,
-			);
-			name = Controllers;
 			sourceTree = "<group>";
 		};
 		A779ABCF2109B9CD0035AF88 /* Views */ = {
@@ -226,6 +229,7 @@
 			files = (
 				A71FF3032109B505003D37B3 /* LaunchScreen.storyboard in Resources */,
 				A71FF3002109B505003D37B3 /* Assets.xcassets in Resources */,
+				381ADCFA211432D60001B2C0 /* README.md in Resources */,
 				A71FF2FE2109B504003D37B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

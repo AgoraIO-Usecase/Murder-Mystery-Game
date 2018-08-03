@@ -51,16 +51,20 @@ private extension WatchViewController {
     func loadAgoraKit() {
         // 初始化AgoraRtcEngineKit
         agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: KeyCenter.appId(), delegate: self)
+        
+        // 因为是纯音频多人通话的场景，设置为通信模式以获得更好的音质
         agoraKit.setChannelProfile(.communication)
-        agoraKit.enableAudioVolumeIndication(1000, smooth: 3)
         
         // 通信模式下默认为听筒，demo中将它切为外放
         agoraKit.setDefaultAudioRouteToSpeakerphone(true)
         
+        // 启动音量回调，用来在界面上显示房间其他人的说话音量
+        agoraKit.enableAudioVolumeIndication(1000, smooth: 3)
+        
         // 加入案发现场的群聊频道
         agoraKit.joinChannel(byToken: nil, channelId: KeyCenter.crimeChannelId(), info: nil, uid: 0, joinSuccess: nil)
         
-        // 围观时，不发送本地的音频流
+        // 围观模式不发送本地的音频流
         agoraKit.muteLocalAudioStream(true)
     }
 }
@@ -125,17 +129,11 @@ extension WatchViewController: AgoraRtcEngineDelegate {
     }
     
     func rtcEngine(_ engine: AgoraRtcEngineKit, reportAudioVolumeIndicationOfSpeakers speakers: [AgoraRtcAudioVolumeInfo], totalVolume: Int) {
-        DispatchQueue.global().async { [weak self] in
-            for speaker in speakers {
-                if let weakSelf = self, let index = weakSelf.getIndexWithUserIsSpeaking(uid: speaker.uid) {
-                    let path = IndexPath.init(item: index, section: 0)
-                    DispatchQueue.main.async {
-                        if  let cell = weakSelf.usersCollectionView.cellForItem(at: path) {
-                            let userCell = cell as! UserCell
-                            userCell.animating = true
-                        }
-                    }
-                }
+        // 收到说话者音量回调，在界面上对应的 cell 显示动效
+        for speaker in speakers {
+            if let index = getIndexWithUserIsSpeaking(uid: speaker.uid),
+                let cell = usersCollectionView.cellForItem(at: IndexPath(item: index, section: 0)) as? UserCell {
+                cell.animating = true
             }
         }
     }

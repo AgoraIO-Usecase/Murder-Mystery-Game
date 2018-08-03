@@ -143,17 +143,11 @@ extension PrivateChatViewController: AgoraRtcEngineDelegate {
     }
     
     func rtcEngine(_ engine: AgoraRtcEngineKit, reportAudioVolumeIndicationOfSpeakers speakers: [AgoraRtcAudioVolumeInfo], totalVolume: Int) {
-        DispatchQueue.global().async { [weak self] in
-            for speaker in speakers {
-                if let weakSelf = self, let index = weakSelf.getIndexWithUserIsSpeaking(uid: speaker.uid) {
-                    let path = IndexPath.init(item: index, section: 0)
-                    DispatchQueue.main.async {
-                        if  let cell = weakSelf.usersCollectionView.cellForItem(at: path) {
-                            let userCell = cell as! UserCell
-                            userCell.animating = true
-                        }
-                    }
-                }
+        // 收到说话者音量回调，在界面上对应的 cell 显示动效
+        for speaker in speakers {
+            if let index = getIndexWithUserIsSpeaking(uid: speaker.uid),
+                let cell = usersCollectionView.cellForItem(at: IndexPath(item: index, section: 0)) as? UserCell {
+                cell.animating = true
             }
         }
     }

@@ -130,6 +130,13 @@
                                                     <color key="textColor" red="0.80000000000000004" green="0.55686274509803924" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mrcophone-s" translatesAutoresizingMaskIntoConstraints="NO" id="rua-BS-Qgf">
+                                                    <rect key="frame" x="41" y="41" width="14" height="14"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="14" id="9Mk-Mz-esV"/>
+                                                        <constraint firstAttribute="width" constant="14" id="bq7-7W-pzG"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -138,10 +145,13 @@
                                             <constraint firstAttribute="trailing" secondItem="oyW-3j-1YZ" secondAttribute="trailing" id="IpA-gw-pvh"/>
                                             <constraint firstItem="oyW-3j-1YZ" firstAttribute="leading" secondItem="DZz-Zp-XM4" secondAttribute="leading" id="Nip-iP-O6W"/>
                                             <constraint firstItem="ZMA-2s-N4i" firstAttribute="top" secondItem="oyW-3j-1YZ" secondAttribute="bottom" constant="6" id="ZL9-Zn-VpH"/>
+                                            <constraint firstItem="rua-BS-Qgf" firstAttribute="trailing" secondItem="oyW-3j-1YZ" secondAttribute="trailing" id="bnQ-es-baN"/>
                                             <constraint firstItem="ZMA-2s-N4i" firstAttribute="centerX" secondItem="DZz-Zp-XM4" secondAttribute="centerX" id="chZ-so-vwJ"/>
+                                            <constraint firstItem="rua-BS-Qgf" firstAttribute="bottom" secondItem="oyW-3j-1YZ" secondAttribute="bottom" id="xrL-eh-MnU"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="headImgaView" destination="oyW-3j-1YZ" id="WWy-fb-mLX"/>
+                                            <outlet property="muteImageView" destination="rua-BS-Qgf" id="dEs-tN-BjE"/>
                                             <outlet property="nameLabel" destination="ZMA-2s-N4i" id="Qru-Ti-4ZZ"/>
                                         </connections>
                                     </collectionViewCell>
@@ -268,7 +278,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLK-Kb-1uk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="F3G-la-d5S" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="482" y="116"/>
+            <point key="canvasLocation" x="480.80000000000001" y="115.59220389805098"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ob3-to-jAk">
@@ -468,38 +478,48 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="UserCell" reuseIdentifier="UserCell" id="RVH-fl-F8z" customClass="UserCell" customModule="ARD_Agora_Murder_Mystery_Game" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="UserCell" reuseIdentifier="UserCell" id="166-I3-5FE" customClass="UserCell" customModule="ARD_Agora_Murder_Mystery_Game" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="76"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="55" height="76"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="otV-Md-hh5">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DIL-DD-0Ky">
                                                     <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="otV-Md-hh5" secondAttribute="height" multiplier="1:1" id="Xm9-xd-KXZ"/>
+                                                        <constraint firstAttribute="width" secondItem="DIL-DD-0Ky" secondAttribute="height" multiplier="1:1" id="64W-fV-phP"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIs-hH-PNR">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDn-bv-Rmn">
                                                     <rect key="frame" x="11" y="61" width="33" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.80000000000000004" green="0.5568627451" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mrcophone-s" translatesAutoresizingMaskIntoConstraints="NO" id="t0I-2t-svE">
+                                                    <rect key="frame" x="41" y="41" width="14" height="14"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="14" id="FcU-DN-mRg"/>
+                                                        <constraint firstAttribute="height" constant="14" id="eO0-mp-u5U"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="mIs-hH-PNR" firstAttribute="top" secondItem="otV-Md-hh5" secondAttribute="bottom" constant="6" id="4Cs-EA-yUO"/>
-                                            <constraint firstItem="otV-Md-hh5" firstAttribute="leading" secondItem="RVH-fl-F8z" secondAttribute="leading" id="JV4-O5-I0U"/>
-                                            <constraint firstItem="otV-Md-hh5" firstAttribute="top" secondItem="RVH-fl-F8z" secondAttribute="top" id="M75-PY-atl"/>
-                                            <constraint firstAttribute="trailing" secondItem="otV-Md-hh5" secondAttribute="trailing" id="RIU-zr-cax"/>
-                                            <constraint firstItem="mIs-hH-PNR" firstAttribute="centerX" secondItem="RVH-fl-F8z" secondAttribute="centerX" id="dea-Q5-6sS"/>
+                                            <constraint firstAttribute="trailing" secondItem="DIL-DD-0Ky" secondAttribute="trailing" id="Gs2-UZ-uTC"/>
+                                            <constraint firstItem="t0I-2t-svE" firstAttribute="bottom" secondItem="DIL-DD-0Ky" secondAttribute="bottom" id="VwJ-ce-EVF"/>
+                                            <constraint firstItem="DIL-DD-0Ky" firstAttribute="leading" secondItem="166-I3-5FE" secondAttribute="leading" id="W2V-WA-VCd"/>
+                                            <constraint firstItem="DIL-DD-0Ky" firstAttribute="top" secondItem="166-I3-5FE" secondAttribute="top" id="e0w-Fr-JCa"/>
+                                            <constraint firstItem="t0I-2t-svE" firstAttribute="trailing" secondItem="DIL-DD-0Ky" secondAttribute="trailing" id="nBy-TV-1aO"/>
+                                            <constraint firstItem="eDn-bv-Rmn" firstAttribute="centerX" secondItem="166-I3-5FE" secondAttribute="centerX" id="xxl-WN-4J8"/>
+                                            <constraint firstItem="eDn-bv-Rmn" firstAttribute="top" secondItem="DIL-DD-0Ky" secondAttribute="bottom" constant="6" id="yRo-9e-fRq"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="headImgaView" destination="otV-Md-hh5" id="lfs-a0-IRg"/>
-                                            <outlet property="nameLabel" destination="mIs-hH-PNR" id="t6h-83-tuc"/>
+                                            <outlet property="headImgaView" destination="DIL-DD-0Ky" id="JYU-k3-iMc"/>
+                                            <outlet property="muteImageView" destination="t0I-2t-svE" id="twn-7Q-a49"/>
+                                            <outlet property="nameLabel" destination="eDn-bv-Rmn" id="iFE-qF-HQm"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -591,38 +611,48 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="UserCell" reuseIdentifier="UserCell" id="Fgm-eA-Gq9" customClass="UserCell" customModule="ARD_Agora_Murder_Mystery_Game" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="UserCell" reuseIdentifier="UserCell" id="Ahq-EL-cGS" customClass="UserCell" customModule="ARD_Agora_Murder_Mystery_Game" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="76"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="55" height="76"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Yg-gP-K00">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6ht-ar-SDJ">
                                                     <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="7Yg-gP-K00" secondAttribute="height" multiplier="1:1" id="Tfn-Eo-pu4"/>
+                                                        <constraint firstAttribute="width" secondItem="6ht-ar-SDJ" secondAttribute="height" multiplier="1:1" id="RML-5k-MYa"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4YT-Hd-PA8">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrl-wq-Hp9">
                                                     <rect key="frame" x="11" y="61" width="33" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.80000000000000004" green="0.5568627451" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mrcophone-s" translatesAutoresizingMaskIntoConstraints="NO" id="Zbg-do-QyA">
+                                                    <rect key="frame" x="41" y="41" width="14" height="14"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="14" id="bPA-7f-NL8"/>
+                                                        <constraint firstAttribute="width" constant="14" id="mKe-GU-veB"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="4YT-Hd-PA8" firstAttribute="centerX" secondItem="Fgm-eA-Gq9" secondAttribute="centerX" id="1Ct-mx-NN4"/>
-                                            <constraint firstAttribute="trailing" secondItem="7Yg-gP-K00" secondAttribute="trailing" id="HzB-kM-M4O"/>
-                                            <constraint firstItem="7Yg-gP-K00" firstAttribute="leading" secondItem="Fgm-eA-Gq9" secondAttribute="leading" id="SfL-gw-eqV"/>
-                                            <constraint firstItem="4YT-Hd-PA8" firstAttribute="top" secondItem="7Yg-gP-K00" secondAttribute="bottom" constant="6" id="UB6-Bk-3yv"/>
-                                            <constraint firstItem="7Yg-gP-K00" firstAttribute="top" secondItem="Fgm-eA-Gq9" secondAttribute="top" id="Vaa-b1-ug6"/>
+                                            <constraint firstItem="6ht-ar-SDJ" firstAttribute="top" secondItem="Ahq-EL-cGS" secondAttribute="top" id="AfE-AK-O64"/>
+                                            <constraint firstItem="Zbg-do-QyA" firstAttribute="bottom" secondItem="6ht-ar-SDJ" secondAttribute="bottom" id="BTl-X2-ycC"/>
+                                            <constraint firstAttribute="trailing" secondItem="6ht-ar-SDJ" secondAttribute="trailing" id="Hbb-QU-9sU"/>
+                                            <constraint firstItem="Zbg-do-QyA" firstAttribute="trailing" secondItem="6ht-ar-SDJ" secondAttribute="trailing" id="Jyb-KA-aN0"/>
+                                            <constraint firstItem="6ht-ar-SDJ" firstAttribute="leading" secondItem="Ahq-EL-cGS" secondAttribute="leading" id="OuP-vw-5Uf"/>
+                                            <constraint firstItem="zrl-wq-Hp9" firstAttribute="centerX" secondItem="Ahq-EL-cGS" secondAttribute="centerX" id="fZb-h9-ZaM"/>
+                                            <constraint firstItem="zrl-wq-Hp9" firstAttribute="top" secondItem="6ht-ar-SDJ" secondAttribute="bottom" constant="6" id="gAR-uy-Oci"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="headImgaView" destination="7Yg-gP-K00" id="Sxl-wT-QCE"/>
-                                            <outlet property="nameLabel" destination="4YT-Hd-PA8" id="HvI-RE-Exf"/>
+                                            <outlet property="headImgaView" destination="6ht-ar-SDJ" id="Fd9-MO-UpP"/>
+                                            <outlet property="muteImageView" destination="Zbg-do-QyA" id="hHO-q0-kVS"/>
+                                            <outlet property="nameLabel" destination="zrl-wq-Hp9" id="8eH-Dx-O82"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -756,6 +786,7 @@
         <image name="microphone02" width="74" height="74"/>
         <image name="microphone03" width="74" height="74"/>
         <image name="microphone04" width="74" height="74"/>
+        <image name="mrcophone-s" width="28" height="28"/>
         <image name="muite03" width="74" height="74"/>
         <image name="mute01" width="74" height="74"/>
         <image name="mute04" width="74" height="74"/>

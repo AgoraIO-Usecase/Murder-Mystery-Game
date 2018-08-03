@@ -19,14 +19,16 @@
 2. 示例程序中没有业务部分逻辑。如要开发完整的“剧本杀”产品，需要自行实现业务部分逻辑。比如：选择剧本、阅读剧本、玩家列表、收集线索、文字消息、投票等等。
 
 ## 运行示例程序
-首先在 [Agora.io 用户注册页](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。并在 [Agora.io SDK 下载页](https://www.agora.io/cn/blog/download/) 下载对应平台的 **语音通话 + 直播 SDK**。
+在 [Agora.io 用户注册页](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。
+
+在 [Agora.io SDK 下载页](https://www.agora.io/cn/blog/download/) 下载对应平台的 **语音通话 + 直播 SDK**。
 
 #### iOS
 1. 将有效的 AppID 填写进 KeyCenter.swift
 
 	```
 	static func appId() -> String {
-	    return "YOUR APPID"
+	    return <#YOUR APPID#>
 	}
 	```
 
@@ -50,7 +52,7 @@
 		运行环境:
 		* Android Studio 2.0 +
 		* minSdkVersion 16
-		* 部分模拟器会存在功能缺失或者性能问题，所以推荐使用真机 Android 设备，
+		* 部分模拟器会存在功能缺失或者性能问题，所以推荐使用真机 Android 设备
 
 
 ## 联系我们

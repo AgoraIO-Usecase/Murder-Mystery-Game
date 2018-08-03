@@ -11,7 +11,10 @@ import UIKit
 class UserCell: UICollectionViewCell {
     @IBOutlet weak var headImgaView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var muteImageView: UIImageView!
+    
     var volumeLayer = CALayer.init()
+    
     lazy var keyAnimation: CAKeyframeAnimation = {() -> CAKeyframeAnimation in
         let animate = CAKeyframeAnimation.init()
         animate.keyPath = "opacity"
@@ -19,13 +22,6 @@ class UserCell: UICollectionViewCell {
         animate.duration = 2
         animate.repeatCount = 1
         return animate
-    }()
-    
-    lazy var muteImageView: UIImageView = {() -> UIImageView in
-        let imageView = UIImageView()
-        imageView.image = #imageLiteral(resourceName: "mrcophone-s")
-        self.addSubview(imageView)
-        return imageView
     }()
     
     var isMute: Bool! {
@@ -45,12 +41,6 @@ class UserCell: UICollectionViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        
-        let r = self.bounds.width * 0.5
-        let d = sqrt(r * r * 0.5)
-        let imageWH: CGFloat = 15.0
-        let imageXY = d + r - (imageWH * 0.5)
-        muteImageView.frame = CGRect(x: imageXY, y: imageXY, width: imageWH, height: imageWH)
         
         volumeLayer.frame = headImgaView.bounds
         volumeLayer.cornerRadius = headImgaView.bounds.height * 0.5

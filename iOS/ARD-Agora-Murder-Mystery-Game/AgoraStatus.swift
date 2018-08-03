@@ -9,7 +9,6 @@
 import UIKit
 import AgoraAudioKit
 
-// MARK: AograStatus stores AgoraRtcEngineKit some statuses
 class AgoraStatus: NSObject {
     static let agoraStatus = AgoraStatus()
     var muteLocalAudio: Bool = false
