@@ -59,13 +59,6 @@ public class CrimeActivity extends Activity implements View.OnClickListener, AGA
 
         bIsBroadCaster = (cRole == Constants.CLIENT_ROLE_BROADCASTER);
 
-        if (mRtcEngine != null) {
-
-            /** 观看者不能说话，mute 自己**/
-            if (!bIsBroadCaster) {
-                mRtcEngine.muteLocalAudioStream(true);
-            }
-        }
     }
 
     private void setupUI() {
@@ -178,6 +171,11 @@ public class CrimeActivity extends Activity implements View.OnClickListener, AGA
 
         AGApplication.the().setOnAgoraEngineInterface(this);
         joinChannel(ConstantApp.CHANNEL_NAME_MAIN);
+
+        /** 观看者不能说话，mute 自己**/
+        if (!bIsBroadCaster) {
+            mRtcEngine.muteLocalAudioStream(true);
+        }
 
     }
 
