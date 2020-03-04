@@ -59,7 +59,7 @@ private extension WatchViewController {
         agoraKit.setDefaultAudioRouteToSpeakerphone(true)
         
         // 启动音量回调，用来在界面上显示房间其他人的说话音量
-        agoraKit.enableAudioVolumeIndication(1000, smooth: 3)
+        agoraKit.enableAudioVolumeIndication(1000, smooth: 3, report_vad: false)
         
         // 加入案发现场的群聊频道
         agoraKit.joinChannel(byToken: nil, channelId: KeyCenter.crimeChannelId(), info: nil, uid: 0, joinSuccess: nil)
