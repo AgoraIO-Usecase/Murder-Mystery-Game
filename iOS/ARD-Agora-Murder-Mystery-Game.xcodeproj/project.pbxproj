@@ -29,6 +29,7 @@
 		A7B7BBAA210AE3EB005FE91C /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7BBA9210AE3EB005FE91C /* libresolv.tbd */; };
 		A7B7BBAC210AE3FB005FE91C /* AgoraAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B7BBAB210AE3FB005FE91C /* AgoraAudioKit.framework */; };
 		A7B7BBAE210AE4D2005FE91C /* KeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B7BBAD210AE4D2005FE91C /* KeyCenter.swift */; };
+		F58C19B0240F59390021C4EA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58C19AF240F59390021C4EA /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		A7B7BBA9210AE3EB005FE91C /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		A7B7BBAB210AE3FB005FE91C /* AgoraAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraAudioKit.framework; path = "ARD-Agora-Murder-Mystery-Game/AgoraAudioKit.framework"; sourceTree = "<group>"; };
 		A7B7BBAD210AE4D2005FE91C /* KeyCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCenter.swift; sourceTree = "<group>"; };
+		F58C19AF240F59390021C4EA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7B7BBAC210AE3FB005FE91C /* AgoraAudioKit.framework in Frameworks */,
+				F58C19B0240F59390021C4EA /* Accelerate.framework in Frameworks */,
 				A7B7BBAA210AE3EB005FE91C /* libresolv.tbd in Frameworks */,
 				A7B7BBA8210AE3D9005FE91C /* CoreTelephony.framework in Frameworks */,
 				A7B7BBA6210AE3CF005FE91C /* AudioToolbox.framework in Frameworks */,
@@ -151,6 +154,7 @@
 		A7B7BB9E210AE3A9005FE91C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F58C19AF240F59390021C4EA /* Accelerate.framework */,
 				A7B7BBAB210AE3FB005FE91C /* AgoraAudioKit.framework */,
 				A7B7BBA9210AE3EB005FE91C /* libresolv.tbd */,
 				A7B7BBA7210AE3D9005FE91C /* CoreTelephony.framework */,
